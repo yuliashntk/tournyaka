@@ -1,0 +1,893 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-family: viga;
+}
+
+.navbar-nav {
+  display: none;
+}
+
+.nav-item {
+  margin-right: 14px;
+}
+
+.sticky-top {
+  background-color: white;
+}
+
+.navbar-scroll {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition-duration: 0.5s;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: x-large;
+}
+
+.navbar-brand a {
+  color: black !important;
+  text-decoration: none;
+}
+
+/* Modal sidebar */
+.modal.nav-modal .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 320px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.nav-modal .modal-content {
+  padding: 20px 0px;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 0;
+  border: none;
+  color: #fcbf49;
+  font-family: "Kanit", sans-serif;
+  background-color: #3f3f3f;
+}
+
+.modal.nav-modal .modal-title {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.modal.nav-modal .modal-header {
+  border-bottom: none;
+}
+
+.modal.nav-modal .mobile-nav {
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.modal.nav-modal .side-account {
+  display: flex;
+  padding: 0;
+  width: max-content;
+  text-align: center;
+}
+
+.modal.nav-modal .rounded-account {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #ffae1b;
+  color: rgb(82, 82, 82);
+  border-radius: 50%;
+}
+
+.modal.nav-modal .account-link {
+  text-decoration: none;
+  color: #ffae1b;
+  font-weight: bold;
+}
+
+.modal.nav-modal .modal-body {
+  padding: 40px 40px;
+}
+
+.modal.nav-modal .side-link {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.modal.nav-modal .side-footer {
+  display: flex;
+  margin-top: 30px;
+}
+
+.modal.nav-modal .side-sosmed {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  background: rgb(82, 82, 82);
+  margin-right: 14px;
+  color: #969bab;
+  font-size: 20px;
+}
+
+.modal.nav-modal .side-content {
+  display: flex;
+  text-decoration: none;
+  text-align: justify;
+  color: white;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 150px;
+}
+
+.modal.nav-modal.fade .modal-dialog {
+  right: 0;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.nav-modal.fade.in .modal-dialog {
+  right: 0;
+}
+/* end modal sidebar */
+
+/* modal signin/signup */
+.sign-modal .modal-header,
+.sign-modal .modal-footer {
+  border-bottom: none;
+  border-top: none;
+}
+
+.sign-modal .modal-header {
+  padding-bottom: 0px;
+}
+
+.sign-modal .modal-title,
+.sign-modal .modal-body {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  width: 100%;
+}
+
+.sign-modal .btn {
+  border-radius: 50px;
+}
+
+.sign-modal .btn-google {
+  border-color: gray;
+  width: 375px;
+}
+
+.sign-modal p,
+.sign-modal a {
+  font-size: 13px;
+}
+
+.sign-modal .row {
+  width: 375px;
+}
+
+.sign-modal .logo {
+  display: flex;
+  position: absolute;
+  margin-top: 2px;
+  width: max-content;
+}
+
+.logo-tournyaka {
+  height: 43px;
+  width: 39px;
+}
+
+.sign-modal .divider {
+  border: 1px;
+}
+
+.sign-modal .link {
+  color: #ffae1b;
+  text-decoration: none;
+}
+
+/* end modal signin/signup */
+
+/* End Navbar */
+
+/* Masthead */
+.masthead {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  flex-flow: column;
+  z-index: 0;
+  height: 35rem;
+}
+
+.masthead-gradient {
+  position: absolute;
+  background-size: cover;
+  background: linear-gradient(black, black);
+  height: 35rem;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.masthead.sign {
+  height: 45rem;
+}
+
+.masthead-gradient.sign {
+  height: 45rem;
+}
+
+.masthead .container {
+  display: flex;
+  color: black;
+  flex-flow: column;
+  height: 100%;
+  z-index: 1;
+  justify-content: center;
+}
+
+.masthead .container .heading {
+  display: flex;
+  width: 100%;
+}
+
+.masthead .container .heading-text {
+  display: flex;
+  z-index: 1;
+  flex-flow: column;
+  width: 60%;
+}
+
+.masthead .container .heading-text.sign {
+  flex-flow: column;
+  width: 100%;
+}
+
+.masthead .container .display-1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 6rem;
+  letter-spacing: 0.6rem;
+}
+
+.masthead .container .display-text {
+  font-family: "Poppins", sans-serif;
+  color: rgb(252, 174, 18);
+  font-size: 0.9rem;
+  width: 100%;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.masthead .container .display-2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  letter-spacing: 00.6rem;
+  text-align: center;
+}
+
+.masthead .container .display-3 {
+  font-family: 'Artifika', serif;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.masthead .container .col.sign {
+  display: none;
+}
+
+/* End Masthead */
+
+/* Button */
+.btn-header {
+  font-family: viga;
+  width: 10rem;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(252, 191, 73);
+  padding: 8px;
+}
+
+.btn-events {
+  font-family: 'Inter', sans-serif;
+  width: 10rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(252, 191, 73);
+  padding: 8px;
+}
+
+.btn-footer{
+  font-family: 'Inter', sans-serif;
+  width: 10rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(252, 191, 73);
+  padding: 8px;
+}
+
+.btn-header:hover {
+  background-color: rgb(252, 174, 18);
+}
+
+.btn-nav {
+  width: 50px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.btn-middle {
+  width: 10rem;
+  font-family: 'Inter', sans-serif;
+  padding: 8px;
+}
+
+/* End Button */
+
+/* Section */
+section {
+  display: flex;
+  padding: 5rem 9%;
+  width: 100%;
+}
+
+section .sub-judul {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+}
+
+section .gambar {
+  height: 372px;
+  width: 887px;
+  margin-bottom: 70px;
+}
+
+.page-section1 {
+  background-color: rgb(252, 191, 73);
+}
+
+section .container {
+  display: flex;
+  justify-content: center;
+}
+
+section .page-content {
+  display: flex;
+  color: black;
+  flex-flow: column;
+  text-align: center;
+  width: 100%;
+}
+
+section .page-content1 {
+  display : flex;
+  color: white;
+  width: 100%;
+}
+
+section .page-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 2.1rem;
+  margin-bottom: 3rem;
+}
+
+section .page-text.description {
+  text-align: justify;
+  font-style: normal;
+}
+
+section .logo {
+  height: 135px;
+}
+
+.page-section2 .page-header {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-weight: bold;
+  width: 50%;
+  margin-bottom: 48px;
+}
+
+section .row-content {
+  display: flex;
+  margin-bottom: 48px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.rounded-icon {
+  display: flex;
+  align-self: center;
+  padding: 36px;
+  background-color: #fcbf49;
+  border-radius: 50%;
+}
+
+.icon-calendar {
+  background-color: #fcbf49;
+}
+
+.details {
+  display: flex;
+  width: 60%;
+  margin: 0px 40px;
+  flex-flow: column;
+}
+
+.details .headline {
+  display: flex;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.details .description {
+  display: flex;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-section3 .page-header {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-weight: bold;
+}
+
+.page-section3 .description {
+  display: flex;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 500px;
+}
+
+.row-content1 {
+  display: flex;
+  margin-bottom: 48px;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.col-content1 {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  text-align: left;
+}
+
+.divider-event{
+  border-bottom: 3px solid gray;
+}
+
+.divider-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer {
+  background-color: black;
+}
+
+.footer .col-content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  text-align: left;
+}
+
+.footer .title {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.footer .description {
+  color: #d9dbe1;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.footer .logo-footer {
+  display: flex;
+  width: max-content;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.footer .divider-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  border-bottom: 3px solid white;
+}
+/* End Section */
+
+/* card destinasi */
+.card-destinasi {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 350px;
+}
+
+.card-destinasi .card-img {
+  height: 200px;
+}
+
+.card-destinasi .card-body {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  margin-left: -14px;
+}
+
+.card-destinasi .card-body .card-title {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-destinasi .card-body .card-text {
+  display: flex;
+  text-align: justify;
+  font-size: 14px;
+  height: 32px;
+  line-height: 24px;
+}
+/* End card destinasi */
+
+/* Card gallery */
+.card-gallery:hover {
+  border: 4px solid rgb(252, 174, 18);
+}
+/* End Card gallery */
+
+/* nav owl carousel */
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 90px;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 80px;
+  color: black;
+}
+
+.owl-nav:hover {
+  background-color: black;
+}
+/* End nav owl carousel */
+
+/* Row Events */
+.row-events {
+  margin-top: 120px;
+}
+
+.row-events h5{
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+.row-events p{
+  font-size: 24px;
+  font-weight: bold;
+}
+/* End Row Events */
+
+/* Card Events */
+.card-events {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 350px;
+}
+.card-events .card-img {
+  height: 200px;
+}
+
+.card-events .card-body {
+  display: flex;
+  background-color: #fcbf49;
+  flex-flow: column;
+  text-align: left;
+  margin-left: -14px;
+}
+.card-events .card-body .card-title {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-events .card-body .card-text {
+  display: flex;
+  text-align: justify;
+  font-size: 14px;
+  height: 32px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/* End Card Events */
+
+
+/* Desktop Version */
+@media only screen and (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .navbar-brand {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    display: contents;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+  /* End Navbar */
+
+  /* Masthead */
+  .masthead {
+    height: 50rem;
+  }
+
+  .masthead-gradient {
+    height: 50rem;
+  }
+
+  .masthead .container .heading {
+    padding-left: 60px;
+  }
+
+  .masthead .container .heading-text {
+    width: 60%;
+  }
+
+  .masthead .container .heading-text.sign {
+    flex-flow: row;
+  }
+
+  .masthead .container .display-1 {
+    font-size: 6rem;
+  }
+
+  .masthead .container .display-text {
+    width: 80%;
+  }
+
+  .masthead .container .col.sign {
+    display: block;
+  }
+
+  /* End Masthead */
+
+  /* Section */
+  section {
+    padding: 5rem 9%;
+  }
+
+  section .page-text {
+    line-height: 2.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-section2 .page-header {
+    width: 40%;
+  }
+
+  .page-section3 .description {
+    width: 500px;
+  }
+  /* End Section */
+}
+/* End Desktop Version */
+
+/* Small device */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* End Navbar */
+
+  /* Masthead */
+  .masthead {
+    height: 25rem;
+  }
+
+  .masthead-gradient {
+    height: 25rem;
+  }
+
+  .masthead.sign {
+    height: 35rem;
+  }
+
+  .masthead-gradient.sign {
+    height: 35rem;
+  }
+
+  .masthead .container .heading {
+    padding-left: 30px;
+  }
+
+  .masthead .container .heading-text {
+    width: 100%;
+  }
+
+  .masthead .container .display-1 {
+    font-size: 3rem;
+  }
+
+  .masthead .container .display-text {
+    width: 70%;
+  }
+  /* End Masthead */
+
+  /* Section */
+  section {
+    padding: 3rem 4.5%;
+  }
+
+  section .page-text {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  section .logo {
+    height: 130px;
+  }
+
+  section .sub-judul.desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page-section2 .page-header {
+    width: 80%;
+    margin-bottom: 24px;
+  }
+
+  section .row-content {
+    margin-bottom: 24px;
+  }
+
+  .rounded-icon {
+    padding: 12px;
+  }
+
+  .details {
+    margin: 0px 20px;
+  }
+
+  .details .headline {
+    font-size: 15px;
+    align-items: center;
+    height: 100%;
+  }
+
+  .details .description {
+    display: none;
+  }
+
+  .page-section3 .description {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 400px;
+  }
+
+  .footer .title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .footer .description {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  .footer .logo-footer {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .divider {
+    border-bottom: 1.5px solid white;
+  }
+  /* End Section */
+}
+/* End Small device */

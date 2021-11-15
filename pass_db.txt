@@ -1,0 +1,3 @@
+nm db   : u5696241_tournyaka
+user db : u5696241_admin
+pass_db : gRPv!DHaV}w#
